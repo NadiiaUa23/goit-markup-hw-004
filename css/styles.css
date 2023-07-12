@@ -162,14 +162,26 @@ header {
 /* -/////////////////////секция 1//////////////////////---------- */
 .hero-section {
     background: var(--hero-background);
-
     padding: 188px 0;
+
+
+
+    /*  
+    background-image: linear-gradient(to-bottom,
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+url(/images/people-office.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;*/
+
 }
 
 
+
+
 .hero-container {
-   margin: auto;
-  
+    margin: auto;
 
 }
 
@@ -195,7 +207,6 @@ header {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-
 }
 
 .button {}
@@ -212,7 +223,6 @@ header {
     border-radius: 4px;
     height: 56px;
     border: none;
-
 }
 
 .hero-button:hover,
@@ -220,6 +230,11 @@ header {
     background-color: #404BBF;
 }
 
+.hero-button {
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 
 /* _//////////////////////////////////////секция 2///////////////////__ */
 
@@ -307,9 +322,7 @@ header {
     padding: 120px 0;
 }
 
-.team-container {
-    
-}
+.team-container {}
 
 .team-title {
     font-size: 36px;
@@ -319,8 +332,8 @@ header {
     /* 0.72/36 */
     text-transform: capitalize;
     color: #2e2f42;
-  
-    margin-bottom: 72px; 
+
+    margin-bottom: 72px;
 }
 
 .team {
@@ -358,7 +371,7 @@ header {
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
-    
+
     margin-bottom: 8px
 }
 
@@ -367,7 +380,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-   
+
 }
 
 
@@ -379,10 +392,7 @@ header {
     padding: 100px 0;
 }
 
-.ftr-container {
-
- 
-}
+.ftr-container {}
 
 
 .logo-down {
@@ -456,6 +466,10 @@ header {
     background-color: #404BBF;
     cursor: pointer;
     border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 /*?___________ список 9 штук_________________________ */
@@ -488,6 +502,14 @@ header {
     border-top: none;
 }
 
+.exemplo-subt:hover {
+    border: 1px solid var(--cloud, #F4F4FD);
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+
+
 .exemplo-title {
     font-weight: 500;
     font-size: 20px;
@@ -495,7 +517,7 @@ header {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    
+
 }
 
 .exemplo-text {
