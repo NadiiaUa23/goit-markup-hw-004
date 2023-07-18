@@ -34,7 +34,7 @@
 
 
                     <ul class="nav-menu-list list">
-                        <li><a class="nav-item link" href="./index.html">Studio</a></li>
+                        <li><a class="nav-item link current" href="./index.html">Studio</a></li>
                         <li><a class="nav-item link" href="./portfolio.html">Portfolio</a></li>
                         <li><a class="nav-item link" href="">Contacts</a></li>
                     </ul>
@@ -60,8 +60,12 @@
 
                     <h1 class="hero-title">Effective Solutions<br /> for Your Business</h1>
 
-                    <button type="button" class="hero-button ">Order Service</button>
+                    <!------------------ Замовити послугу -->
+                    <button   type="button" class="hero-button" data-modal-open>Order Service</button>
+               
+
                 </div>
+               
             </section>
 
             <!-- секция 2 -->
@@ -448,6 +452,18 @@
             </div>
         </footer>
     </div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="button-close" data-modal-close>
+                 
+                    <svg class="close" width="24" height="24">
+                        <use href="/images/icons.svg#icon-close"></use>
+                    </svg>
+          
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -68,6 +68,23 @@ img {
     display: block;
 }
 
+.current {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ocean, #404BBF);
+}
 
 
 /**_____///////////////////////header////////////////////////////////______*/
@@ -104,13 +121,13 @@ header {
     letter-spacing: 0.03em;
     /* 0.54/18 */
     text-transform: uppercase;
-    margin-right: 76px
-    transition: color 300ms ease;
+    margin-right: 76px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-accent {
     color: var(--dark);
-    transition: color 300ms ease;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-menu-list {
@@ -147,7 +164,7 @@ header {
     /* 0.32/16 */
     display: flex;
     gap: 40px;
-    transition: color 300ms ease
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -202,7 +219,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    transition: color 300ms ease
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button {}
@@ -231,6 +248,7 @@ header {
     background: var(--iris, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 
 /* _//////////////////////////////////////секция 2///////////////////__ */
 
@@ -407,7 +425,7 @@ header {
     background-color: var(--primary-brand);
     border-radius: 50%;
     justify-content: center;
-    transition: color 300ms ease;
+
 
 }
 
@@ -415,6 +433,10 @@ header {
 
 .team-social {
     fill: rgba(244, 244, 253, 1);
+}
+
+.team-social {
+    transition: fiil 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .person-item:hover,
@@ -501,11 +523,12 @@ header {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 16px;
-    transition: color 300ms ease;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-down-accent {
     color: #f4f4fd;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-text {
@@ -530,7 +553,7 @@ header {
 }
 
 .ftr-text-social {
-    
+
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -538,22 +561,22 @@ header {
     letter-spacing: 0.32px;
     color: var(--white, #FFF);
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
+
     /* Body Medium */
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;}
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.32px;
+}
 
 .ftr-icon-list {
     display: inline-flex;
     align-items: flex-start;
     gap: 16px;
     padding: 8px;
-    
-    
 
 }
 
@@ -564,14 +587,19 @@ header {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
-    transition: color 300ms ease;
-  
+    transition: fiil 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .ftr-icon-link {}
 
 .ftr-social {
     fill: rgba(244, 244, 253, 1);
+}
+
+.ftr-icon-item:hover,
+.ftr-icon-item:focus {
+    background-color: #31D0AA;
 }
 
 
@@ -605,6 +633,7 @@ header {
     border: 1px solid var(--cornflower, #E7E9FC);
     background: var(--cloud, #F4F4FD);
     padding: 12px 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-button-all:hover,
@@ -700,10 +729,70 @@ header {
     width: 360px;
     height: 300px;
     flex-shrink: 0;
-    transform: translateX(-100%);
-    transition: transform 250ms ease-in-out;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-item:hover .overlay {
     transform: translateX(0);
+}
+
+/* ----------------model---------------------- */
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 67, 60, 0.508);
+    display: flex;
+    transform: opacity 250ms linear, visibility 250ms linear;
+}
+
+
+
+.modal {
+    width: 408px;
+    min-height: 584px;
+    margin: auto;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--dairy, #FCFCFC);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+  
+    transition: transform 250ms linear;
+}
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms linear;
+}
+
+
+.button-close {
+    border: none;
+    background: transparent;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+
+.close {
+    margin: auto;
+    border: 1px solid #8E8F99;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    padding: 8px;
+}
+
+.is-hidden {
+    opacity: o;
+    visibility: hidden;
+    pointer-events: none;
 }
