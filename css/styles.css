@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 
 .container {
     width: 100%;
@@ -202,7 +198,7 @@ header {
 
 
 .hero-container {
-    margin: auto;
+ 
 
 }
 
@@ -554,7 +550,7 @@ header {
 
 .ftr-container {
     display: flex;
-    padding-left: 156px;
+   
     align-items: baseline;
 }
 
@@ -722,6 +718,9 @@ header {
 }
 
 .exemplo-image {
+    
+}
+.item-img {
     display: block;
     width: 360px;
     height: 300px;
