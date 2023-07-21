@@ -836,7 +836,7 @@ header {
 }
 
 .is-hidden {
-    opacity: o;
+    opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
