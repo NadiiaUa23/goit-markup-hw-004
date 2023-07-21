@@ -736,9 +736,6 @@ header {
  
 }
 
-
-
-
 .img-box-pof {
      position: relative; 
     overflow: hidden;
@@ -760,7 +757,7 @@ header {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
- .exemplo-image:hover, .exemplo-image:focus .overlay-text {
+ .exemplo-image:hover, .exemplo-image:focus {
     transform: translateY(0);
 }
 
