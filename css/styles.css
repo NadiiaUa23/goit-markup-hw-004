@@ -1,5 +1,3 @@
-
-
 .container {
     width: 100%;
     max-width: 1158px;
@@ -21,7 +19,6 @@ main {
     --light: #F4F4FD;
     --hero-background: #2E2F42;
     --white-background: #FFFFFF;
-
 }
 
 body {
@@ -65,10 +62,6 @@ img {
 }
 
 
-
-
-
-
 /**_____///////////////////////header////////////////////////////////______*/
 
 header {
@@ -85,7 +78,6 @@ header {
 .nav-menu {
     display: flex;
     align-items: center;
-
 }
 
 .heder-logo {
@@ -128,15 +120,14 @@ header {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
-    
 }
 
 .current {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404bbf;
-
 }
+
 .current::after {
     content: "";
     position: absolute;
@@ -146,7 +137,6 @@ header {
     height: 4px;
     border-radius: 2px;
     background: var(--ocean, #404BBF);
-    
 }
 
 .informacion {
@@ -175,12 +165,9 @@ header {
 }
 
 
-
-
 /*?__///////////////_Body_////////////////////////////////////////////////////__ */
 /* -/////////////////////секция 1//////////////////////---------- */
 .hero-section {
-
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     padding: 188px 0;
@@ -188,18 +175,12 @@ header {
     background-color: var(--hero-background);
     height: 600px;
     flex-shrink: 0;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
-
-
 .hero-container {
- 
-
 }
 
 .hero-title {
@@ -212,7 +193,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-
 }
 
 .hero-button {
@@ -281,7 +261,6 @@ header {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
-
 }
 
 .feature-box {
@@ -295,7 +274,6 @@ header {
     border-radius: 4px;
     background: var(--cloud, #F4F4FD);
     padding: 24px 100px;
-
 }
 
 .feature-subtitle {
@@ -350,12 +328,10 @@ header {
 .what-list {
     display: flex;
     gap: 24px;
-
 }
 
 .what-img {
     width: calc((100% - 48px)/3);
-
 }
 
 
@@ -383,7 +359,6 @@ header {
     background-color: #F4F4FD;
     gap: 24px;
     display: flex;
-
 }
 
 .team-item {
@@ -391,7 +366,6 @@ header {
     border-radius: 0px 0px 4px 4px;
     background: var(--white, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
 }
 
 .team-image {
@@ -430,8 +404,6 @@ header {
 }
 
 .person-item {
- 
-   
 }
 
 .person-social-link {
@@ -466,11 +438,9 @@ header {
     background: #FFF;
     padding-top: 120px;
    padding-bottom: 120px;
-    
 }
 
 .cust-container {
-   
 }
 
 .cust-title {
@@ -485,35 +455,22 @@ header {
     letter-spacing: 0.02em;
     /* 0.72/36 */
     text-transform: capitalize;
-  
     margin-bottom: 72px;
-
-
 }
 
 .cust-list {
     display: flex;
     gap: 24px;
-
-
-
 }
 
 .cust-item {
-  
     width: calc((100% - 120px) / 6);
     height: 88px;
- 
-
-   
-
 }
 
 .cust-link {
-  
     width: 100%;
     border-radius: 4px;
-   
     border: 1px solid var(--lightslate, #8E8F99);
     display: flex;
     align-items: center;
@@ -525,15 +482,12 @@ header {
 
 .cust-item-svg {
     fill: #8E8F99;
-   
-
 }
 
 .cust-link:hover,
 .cust-link:focus {
     color: #404bbf;
     border-color: #404bbf;
-
 }
 
 .cust-item-svg {
@@ -551,10 +505,8 @@ header {
 
 .ftr-container {
     display: flex;
-   
     align-items: baseline;
 }
-
 
 .logopftr {
     margin-right: 120px
@@ -592,7 +544,6 @@ header {
 .ftr-text {
     display: flex;
     width: 264px;
-
 }
 
 .ftr-icon {}
@@ -602,26 +553,21 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
     color: var(--white, #FFF);
     margin-bottom: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
 
 .ftr-icon-list {
     display: flex;
     gap: 16px;
     align-items: flex-start;
-
-
 }
 
 .ftr-icon-item {
     text-align: center;
-
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -638,8 +584,6 @@ header {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .ftr-social {
@@ -662,8 +606,6 @@ header {
 .exemplo-container {}
 
 /*?___________кнопки на портфолио_________________________ */
-
-
 .nav-button {
     display: flex; 
     margin-bottom: 72px;
@@ -756,7 +698,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     transform: translateY(0);
 }
 
-
 .exemplo-subt {
     display: flex;
     padding: 32px 16px;
@@ -766,8 +707,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-
-
 
 .exemplo-title {
     font-weight: 500;
@@ -784,10 +723,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     color: #434455;
 }
 
-
-
-
-
 /* ----------------modal---------------------- */
 .backdrop {
     position: fixed;
@@ -796,7 +731,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -824,7 +758,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     transition: transform 250ms linear;
 }
 
-
 .button-close {
     position: absolute;
     border: none;
@@ -833,7 +766,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     width: 24px;
     top: 24px;
     right: 24px;
-
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -849,8 +781,8 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
-
 }
+
 .button-close:focus {
     background-color: #404bbf;
     border: none;
@@ -860,6 +792,3 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 .close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
