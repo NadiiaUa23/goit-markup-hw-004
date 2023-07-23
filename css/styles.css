@@ -178,9 +178,13 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* фон по центру секции? */
+    margin: 0 auto;
+    
 }
 
 .hero-container {
+    
 }
 
 .hero-title {
@@ -688,7 +692,6 @@ header {
 
 .exemplo-image:hover,
 .exemplo-image:focus {
-    border: 1px solid var(--cloud, #F4F4FD);
 background: var(--white, #FFF);
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
